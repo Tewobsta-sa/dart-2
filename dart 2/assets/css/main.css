@@ -1204,45 +1204,100 @@ section {
   overflow: hidden;
 }
 
-.portfolio .portfolio-wrap img {
-  transition: 0.3s;
-  position: relative;
-  z-index: 1;
+/*--------------------------------------------------------------
+ADDED FROM LINE 1149 TO 1237
+--------------------------------------------------------------*/
+
+/* Portfolio Container */
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
 }
 
-.portfolio .portfolio-wrap .portfolio-info {
-  padding: 25px 20px;
-  background-color: #fff;
+/* Portfolio Item */
+.portfolio-item {
   position: relative;
-  border-top: 1px solid #f3f3f3;
-  z-index: 2;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
 
-.portfolio .portfolio-wrap .portfolio-info h4 {
+.portfolio-item:hover {
+  transform: translateY(-10px);
+}
+
+/* Portfolio Image */
+.portfolio-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Portfolio Info */
+.portfolio-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover .portfolio-info {
+  transform: translateY(0);
+}
+
+.portfolio-info h3 {
   font-size: 18px;
   font-weight: 600;
-  padding-right: 50px;
+  margin-bottom: 10px;
+  color: #333;
 }
 
-.portfolio .portfolio-wrap .portfolio-info h4 a {
-  color: var(--color-default);
-  transition: 0.3s;
-}
-
-.portfolio .portfolio-wrap .portfolio-info h4 a:hover {
-  color: var(--color-primary);
-}
-
-.portfolio .portfolio-wrap .portfolio-info p {
-  color: #6c757d;
+.portfolio-info p {
   font-size: 14px;
+  color: #666;
   margin-bottom: 0;
-  padding-right: 50px;
 }
 
-.portfolio .portfolio-wrap:hover img {
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .portfolio-container {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-item img {
+    height: 200px;
+  }
+
+  .portfolio-info {
+    padding: 15px;
+  }
+
+  .portfolio-info h3 {
+    font-size: 16px;
+  }
+
+  .portfolio-info p {
+    font-size: 12px;
+  }
+}
+
+.portfolio .portfolio-wrap:hover{
+  background-color: rgba(26, 144, 130, 0.4);
   transform: scale(1.1);
 }
+
 
 /*--------------------------------------------------------------
 # Portfolio Details Section

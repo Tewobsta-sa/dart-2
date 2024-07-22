@@ -290,3 +290,31 @@ navbarlinks.forEach(navbarlink => {
   });
 
 });
+
+/* modals */
+
+const modalBtns = document.querySelectorAll(".modal-open");
+
+modalBtns.forEach(function(btn) {
+  btn.addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent default link behavior
+    const modal = btn.getAttribute("data-modal");
+    document.getElementById(modal).style.display = "block";
+  });
+});
+
+const closeBtns = document.querySelectorAll(".close")
+
+closeBtns.forEach(function(btn){
+  btn.addEventListener("click", function(event){
+    event.preventDefault();
+    const modal = btn.closest(".modal").style.display ="none"
+  })
+})
+
+
+window.onclick = function(e){
+  if(e.target.className == "modal"){
+    e.target.style.display = "none"
+  }
+}
