@@ -1204,10 +1204,6 @@ section {
   overflow: hidden;
 }
 
-/*--------------------------------------------------------------
-ADDED FROM LINE 1149 TO 1237
---------------------------------------------------------------*/
-
 /* Portfolio Container */
 .portfolio-container {
   display: grid;
@@ -1296,6 +1292,43 @@ ADDED FROM LINE 1149 TO 1237
 .portfolio .portfolio-wrap:hover{
   background-color: rgba(26, 144, 130, 0.4);
   transform: scale(1.1);
+}
+
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  display:none;
+  overflow: hidden;
+}
+
+.modal-content{
+  background-color: #fff;
+  margin-top: 100px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 24px;
+  border-radius: 4px;
+  z-index: 4;
+}
+
+.modal-content h2{
+  color: #008374;
+}
+
+.modal-header .close{
+  float: right;
+  border: none;
+  
+}
+
+.modal-header .close:hover{
+  background-color: darkgray;
 }
 
 
