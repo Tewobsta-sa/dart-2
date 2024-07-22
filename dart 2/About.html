@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Dart Digital Technologies</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <style>
+    .card {
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .card-content {
+      padding: 20px;
+      flex: 1;
+    }
+  
+    .card-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  
+    .card-description {
+      font-size: 16px;
+      color: #666;
+    }
+  </style>
+
+
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <section id="topbar" class="topbar d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">info@dartdigitaltech.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+251 4031 2160</span></i>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section><!-- End Top Bar -->
+
+  <header id="header" class="header d-flex align-items-center">
+
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <!-- <h1>Impact<span>.</span></h1> -->
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li  class="dropdown"><a href="#"><span>Services</span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="Consultancy.html">ICT Consultancy</a></li>
+              <li><a href="Enterprise.html">Enterprise Application Integration (EAI)</a></li>
+              <li><a href="Data.html">Data Analytics and Business Intelligence</a></li>
+              <li><a href="cloud.html">Cloud Service Infrastructure Management</a></li>
+              <li><a href="testing.html">IT Auditing and Testing </a></li>
+              <li><a href="training.html">Training on Emerging Technology</a></li>
+            </ul>
+          </li>
+          <li  class="dropdown"><a href="#"><span>Product</span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="BA.html">Business Automation </a></li>
+              <li><a href="cons.html">Construction & Real Estate </a></li>
+              <li><a href="health.html">Health </a></li>
+              <li><a href="energy.html">Energy </a></li>
+              <li><a href="sport.html">Sport and Entertainment  </a></li>
+              <li><a href="ngo.html">NGOs</a></li>
+              <li><a href="research.html">Research and Innovation </a></li>
+            </ul>
+          </li>
+          <li><a href="join.html"><span>Join Us</span></a>        
+          </li>
+          <li><a href="blog.php">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+      <div class="page-header d-flex align-items-center" style="background-image: url('');">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-12 text-center">
+              <h2>About Us</h2>
+              <p>Dart Digital Technologies Plc is a distinguished company duly registered with the Ethiopian Ministry of Trade. Our organization is fortified by a dynamic team, comprised of seasoned industry professionals boasting profound expertise in the IT industry. The co-founders, seasoned veterans in the sector, possess validated proficiency in a diverse range of software development tools: programming languages, databases, architecture design, data analysis, and business development. This rich tapestry of knowledge enables the company to tackle challenges with a holistic approach, from conception to execution.</p>
+              <p>With our Ethiopian roots, the company holds a distinctive vantage point, allowing it to grasp local market landscape and deliver solutions that resonate with specific needs. Our unwavering commitment to excellence, combined with diverse skillset, makes us a formidable force in the ever-evolving software landscape.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>About Us</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Breadcrumbs -->
+
+    <section id="blog" class="blog">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row g-5">
+
+          <div class="col-lg-8">
+
+            <article class="blog-details">
+
+              <div class="post-img" id="vision" style="border-radius: 20px;">
+                <img src="assets/img/About/about_us.png" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="title text-center"  id="mission">Vision</h2>
+              <div class="content"> 
+                <blockquote>
+                  <p>
+                    To become the leading innovator in Ethiopian software development, empowering businesses and communities through cutting-edge technology solutions.
+                  </p>
+                </blockquote>
+              <h2 class="title text-center" id="core">Mission</h2>
+                 <blockquote>
+                  <p>
+                    Our mission is simple: to empower businesses with transformative software solutions that drive growth, efficiency, and success. We strive to understand the unique challenges our clients face and develop tailored solutions that exceed their expectations.
+                  </p>
+                 </blockquote>
+
+                <h3 id="approach">Core values</h3>
+                    <ul>
+                       <li style="text-align: justify;"><strong>Excellence: </strong>We strive for exceptional quality in all aspects of our work, from crafting elegant code to delivering groundbreaking solutions.</li>
+                       <li style="text-align: justify;"><strong>Innovation: </strong>We believe in pushing boundaries and exploring new frontiers in technology, embracing change and fostering a culture of continuous learning.</li>
+                       <li style="text-align: justify;"><strong>Impact: </strong> Our purpose is to create software that makes a positive difference, enriching lives and driving progress in Ethiopia and beyond.</li>
+                       <li style="text-align: justify;"><strong>Collaboration: </strong>We foster a culture of teamwork and open communication, valuing diverse perspectives and celebrating collective achievements.</li>
+                       <li style="text-align: justify;"><strong>Integrity: </strong>We conduct business with honesty and transparency, prioritizing building trust with clients, partners, and employees, upholding the highest standards of integrity in all our interactions. </li>
+                    </ul>
+                <img src="assets/img/About/approach.png" class="img-fluid" alt="">
+
+                <h2 class="title text-center"  id="set">Approach</h2>
+                <blockquote>
+                 <p>
+                  At Dart Digital Technologies, we believe in a collaborative approach to software development. We work closely with our clients throughout the entire process, from concept to delivery, ensuring that their vision is brought to life. Our team of experienced developers, designers, and project managers are dedicated to delivering high-quality, scalable solutions on time and within budget.
+                 </p>
+                </blockquote>
+                <h3>What Sets Us Apart</h3>
+                    <ul>
+                       <li style="text-align: justify;"><strong>Expertise: </strong>Our team comprises industry experts with years of experience in software development, ensuring that we deliver best-in-class solutions.</li>
+                       <li style="text-align: justify;"><strong>Innovation: </strong>We stay ahead of the curve by embracing the latest technologies and methodologies to continuously improve our products and services.</li>
+                       <li style="text-align: justify;"><strong>Customer-Centricity: </strong> Customer satisfaction is at the heart of everything we do. We prioritize understanding our clients' needs and providing them with personalized attention and support.</li>
+                       <li style="text-align: justify;"><strong>Agility: </strong>We adapt quickly to changing requirements and market dynamics, allowing us to deliver flexible solutions that can evolve with our clients' businesses.</li>
+                    </ul>
+              </div><!-- End post content -->
+
+              <div class="meta-bottom">
+                <i class="bi bi-tags"></i>
+                <ul class="tags">
+                  <li><a href="#vision">Vision </a></li>
+                  <li><a href="#mission">Mission </a></li>
+                  <li><a href="#core">Core values </a></li>
+                  <li><a href="#approach">Our Approach </a></li>
+                  <li><a href="#set">What Sets Us Apart</a></li>
+                  <li><a href="#footer">Get in Touch </a></li>
+                </ul>
+              </div><!-- End meta bottom -->
+
+            </article><!-- End about  -->
+          </div>
+
+          <div class="col-lg-4">
+
+            <div class="sidebar">
+
+              <div class="sidebar-item categories">
+                <h3 class="sidebar-title">Quick Link</h3>
+                <ul class="mt-3">
+                  <li><a href="#vision">Vision </a></li>
+                  <li><a href="#mission">Mission </a></li>
+                  <li><a href="#core">Core values </a></li>
+                  <li><a href="#approach">Our Approach </a></li>
+                  <li><a href="#set">What Sets Us Apart</a></li>
+                  <li><a href="#footer">Get in Touch </a></li>
+                </ul>
+              </div><!-- End sidebar categories-->
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img src="assets/img/logo.png" alt="">
+          </a>
+          <div class="social-links d-flex mt-4">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About us</a></li>
+            <li><a href="termofservice.html">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="Consultancy.html">ICT Consultancy</a></li>
+            <li><a href="Enterprise.html">Enterprise Application Integration (EAI)</a></li>
+            <li><a href="Data.html">Data Analytics and Business Intelligence</a></li>
+            <li><a href="cloud.html">Cloud Service Infrastructure Management</a></li>
+            <li><a href="testing.html">IT Auditing and Testing </a></li>
+            <li><a href="training.html">Training on Emerging Technology </a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>
+            Cameroon St.<br> 
+            Bole Brass, Addis Ababa<br> 
+            Ethiopia <br>
+            <strong>Phone:</strong> +251 940 312 160<br>
+            <strong>Email:</strong> info@dartdigitaltech.com<br>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Dart Digital Technologies PLC</span></strong>. All Rights Reserved 2024
+      </div>
+      <div class="credits">
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

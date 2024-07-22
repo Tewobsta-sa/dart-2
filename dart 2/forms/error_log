@@ -1,0 +1,7 @@
+[05-Jul-2024 22:48:51 Europe/Berlin] PHP Notice:  Undefined index: name in /home/dartdihd/public_html/forms/contact.php on line 39
+[05-Jul-2024 22:48:51 Europe/Berlin] PHP Notice:  Undefined index: email in /home/dartdihd/public_html/forms/contact.php on line 40
+[05-Jul-2024 22:48:51 Europe/Berlin] PHP Notice:  Undefined index: subject in /home/dartdihd/public_html/forms/contact.php on line 41
+[05-Jul-2024 22:48:51 Europe/Berlin] PHP Notice:  Undefined index: name in /home/dartdihd/public_html/forms/contact.php on line 42
+[05-Jul-2024 22:48:51 Europe/Berlin] PHP Notice:  Undefined index: email in /home/dartdihd/public_html/forms/contact.php on line 42
+[05-Jul-2024 22:48:51 Europe/Berlin] PHP Notice:  Undefined index: subject in /home/dartdihd/public_html/forms/contact.php on line 42
+[05-Jul-2024 22:48:51 Europe/Berlin] PHP Notice:  Undefined index: message in /home/dartdihd/public_html/forms/contact.php on line 42

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Dart Digital Technologies</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <style>
+    .card {
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .card-content {
+      padding: 20px;
+      flex: 1;
+    }
+  
+    .card-title {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  
+    .card-description {
+      font-size: 16px;
+      color: #666;
+    }
+    .container-card {
+    max-width: 100%;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+
+  tr:hover {
+    background-color: #f9f9f9;
+  }
+  </style>
+
+
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <section id="topbar" class="topbar d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">info@dartdigitaltech.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>+251 4031 2160</span></i>
+      </div>
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section><!-- End Top Bar -->
+
+  <header id="header" class="header d-flex align-items-center">
+
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="assets/img/logo.png" alt="">
+        <!-- <h1>Impact<span>.</span></h1> -->
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li  class="dropdown"><a href="#"><span>Services</span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="Consultancy.html">ICT Consultancy</a></li>
+              <li><a href="Enterprise.html">Enterprise Application Integration (EAI)</a></li>
+              <li><a href="Data.html">Data Analytics and Business Intelligence</a></li>
+              <li><a href="cloud.html">Cloud Service Infrastructure Management</a></li>
+              <li><a href="testing.html">IT Auditing and Testing </a></li>
+              <li><a href="training.html">Training on Emerging Technology</a></li>
+            </ul>
+          </li>
+          <li  class="dropdown"><a href="#"><span>Product</span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="BA.html">Business Automation </a></li>
+              <li><a href="cons.html">Construction & Real Estate </a></li>
+              <li><a href="health.html">Health </a></li>
+              <li><a href="energy.html">Energy </a></li>
+              <li><a href="sport.html">Sport and Entertainment  </a></li>
+              <li><a href="ngo.html">NGOs</a></li>
+              <li><a href="research.html">Research and Innovation </a></li>
+            </ul>
+          </li>
+          <li><a href="join.html"><span>Join Us</span></a> 
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs">
+      <div class="page-header d-flex align-items-center" style="background-image: url('');">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2>Sport and Entertainment</h2>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Sport and Entertainment</li>
+          </ol>
+        </div>
+      </nav>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container" data-aos="fade-up">
+
+        <div class="position-relative h-100">
+          <div class="slides-1 portfolio-details-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+
+              <div class="swiper-slide">
+                <img src="assets/img/portfolio/gym.png" alt="">
+              </div>
+
+              <!-- <div class="swiper-slide">
+                <img src="assets/img/portfolio/gas1.jpg" alt="">
+              </div> -->
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+        </div>
+
+        <div class="row justify-content-between gy-4 mt-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-description">
+              <h2>Gymnasium Service Management System detail</h2>
+              <p style="text-align: justify;">
+                We're more than just software developers. We're passionate about using technology to enhance sports and entertainment experiences. Our team combines industry expertise with cutting-edge solutions to help you engage audiences and maximize your impact.              
+                <p>
+                  Expertise You Can Cheer On:
+              </p>
+
+                <ul>
+                  <li style="text-align: justify;"><strong>Unmatched Talent Pool: </strong>Our team is a blend of sports and entertainment experts, data analysts, and award-winning developers, all dedicated to understanding your unique challenges and goals.</li>
+                  <li style="text-align: justify;"><strong>Comprehensive Product Suite: </strong>Ranging from fan engagement platforms and ticketing solutions to performance analysis tools and content management systems, we offer a comprehensive toolbox for every aspect of your operation.</li>
+                  <li style="text-align: justify;"><strong>Proven Success Stories: </strong>We have a track record of success, partnering with leading Gymnasium business owners,  delivering innovative solutions that drive results.</li>
+                </ul>
+                <p>
+                  Beyond the Game:
+                </p>
+                <ul>
+                  <li style="text-align: justify;"><strong>Data-Driven Insights: </strong>Gain valuable insights into fan behavior, performance metrics, and operational trends to make smarter decisions and optimize your efforts.</li>
+                  <li style="text-align: justify;"><strong>Personalized Experiences: </strong>Create deeper connections with your fans through targeted engagement tools, fostering loyalty and driving revenue.</li>
+                  <li style="text-align: justify;"><strong>Streamlined Operations: </strong>Automate processes and centralize data to improve efficiency, reduce costs, and allocate resources where they matter most.</li>
+                  <li style="text-align: justify;"><strong>Future-Proof Innovation: </strong>We remain at the forefront of the industry, constantly evolving our solutions to keep you ahead of the curve.</li>
+                </ul>
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  Ready to take your Gym business service to the next level? 
+                  <i class="bi bi-quote quote-icon-right"></i>      
+                </p>
+
+              </div>
+
+              <p>
+                <a href="contact.html">Partner with us</a>and experience the transformative power of technology. We are here to  help you captivate audiences, enhance experiences, and achieve your full potential in the exciting world of sports and entertainment.
+              </p>
+
+            </div>
+          </div>
+
+          <div class="col-lg-3">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong> <span>Sport and Entertainment</span></li>
+                <li><strong>Product Name</strong> <span>End to End Gymnasium Service Management System </span></li>
+                <li><strong>Developed By</strong> <span>Dart Teams</span></li>
+                <li><strong>Status</strong> <span>Completed / Customizable</span></li>
+                <li><strong>Project date</strong> <span>June, 2019</span></li>
+                <li><a href="contact.html" class="btn-visit align-self-start">Book a demo</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+ <!-- ======= Footer ======= -->
+ <footer id="footer" class="footer">
+
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-lg-5 col-md-12 footer-info">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="assets/img/logo.png" alt="">
+        </a>
+.        <div class="social-links d-flex mt-4">
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About us</a></li>
+          <li><a href="termofservice.html">Terms of service</a></li>
+          <li><a href="#">Privacy policy</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-2 col-6 footer-links">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="Consultancy.html">ICT Consultancy</a></li>
+          <li><a href="Enterprise.html">Enterprise Application Integration (EAI)</a></li>
+          <li><a href="Data.html">Data Analytics and Business Intelligence</a></li>
+          <li><a href="cloud.html">Cloud Service Infrastructure Management</a></li>
+          <li><a href="testing.html">IT Auditing and Testing </a></li>
+          <li><a href="training.html">Training on Emerging Technology </a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <h4>Contact Us</h4>
+        <p>
+          Cameroon St.<br> 
+          Bole Brass, Addis Ababa<br> 
+          Ethiopia <br>
+          <strong>Phone:</strong> +251 940 312 160<br>
+          <strong>Email:</strong> info@dartdigitaltech.com<br>
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container mt-4">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Dart Digital Technologies PLC</span></strong>. All Rights Reserved 2024
+    </div>
+    <div class="credits">
+
+    </div>
+  </div>
+
+</footer><!-- End Footer -->
+<!-- End Footer -->
+
+<a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<div id="preloader"></div>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
