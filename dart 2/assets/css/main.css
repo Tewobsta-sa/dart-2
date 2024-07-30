@@ -758,6 +758,50 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Featured Services Section
+--------------------------------------------------------------*/
+
+.featured-services {
+  padding: 60px 0;
+}
+
+.featured-services .service-item {
+  padding: 40px;
+  background: #fff;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.featured-services .service-item h3 {
+  color: var(--color-default);
+  font-weight: 700;
+  margin: 0 0 20px 0;
+  padding-bottom: 8px;
+  font-size: 22px;
+  position: relative;
+  display: inline-block;
+  border-bottom: 2px solid #eeeeee;
+  transition: 0.3s;
+  border-color: var(--color-primary);
+}
+
+.featured-services .service-item p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+  border-left: 5px solid var(--color-secondary);
+  padding-left: 20px ;
+  text-align: justify;
+}
+
+.featured-services .service-item .readmore {
+  margin-top: 15px;
+  display: inline-block;
+  color: var(--color-primary);
+}
+
+
+/*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
 .clients {
