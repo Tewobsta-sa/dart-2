@@ -139,6 +139,7 @@
           <li><a href="join.html"><span>Join Us</span></a> 
           <li><a href="blog.php">News</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -154,14 +155,15 @@
     <div class="container position-relative">
       <div class="row gy-5" data-aos="fade-in">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
-          <h2 class="animated-text">Welcome to <span>Dart Digital <br> Technologies</span></h2>
+          <h2>Welcome to <span>Dart Digital Technologies</span></h2>
           <p>Darting Ahead with Digital Excellence: Empowering Tomorrow's Technology Today and Beyond, Partnering with You to Transform Vision into Innovation.</p>
           <div class="d-flex justify-content-center justify-content-lg-start">
             <a href="#about" class="btn-get-started">Book a demo</a>
             <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
           </div>
         </div>
-        <div class="col-lg-6 order-1 order-lg-2" id="lottie-container"></div>
+        <div class="col-lg-6 order-1 order-lg-2" id="lottie-container">
+        </div>
       </div>
     </div>
 
@@ -235,6 +237,74 @@
       </div>
     </section><!-- End About Us Section -->
 
+    <!-- ======= Featured Services Section ======= -->
+    <div class="featured-services sections-bg">
+      <div class="container" data-aos="fade-up">
+
+          <div class="section-header">
+            <h2>Featured Services</h2>
+            <p>
+              At Dart Digital Technologies, we drive business growth through innovative IT solutions. By optimizing operations, unlocking data insights, and future-proofing your organization, we enhance your competitive edge in the digital landscape.
+            </p>
+          </div>
+
+          <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="col-lg-6 col-12">
+              <div class="service-item  position-relative">
+                <h3>ICT Consultancy</h3>
+                <p>Navigate the ever-evolving IT landscape with our comprehensive suite of consultancy services, designed to propel your organization towards operational excellence and maximum return on technology investments.</p>
+                <a href="#" class="readmore stretched-link">More </a>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-12">
+              <div class="service-item  position-relative">
+                <h3>Enterprise Application Integration</h3>
+                <p>Streamline your business with our Enterprise Application Integration service. We specialize in connecting your systems, enabling seamless data exchange and unified processes. Achieve greater efficiency, reduced costs, and real-time visibility to stay competitive.</p>
+                <a href="#" class="readmore stretched-link">More </a>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-12">
+              <div class="service-item  position-relative">
+                <h3>Data Analytics and Business Intelligence</h3>
+                <p>Transform your data into actionable intelligence with our comprehensive suite of Data Analytics and Business Intelligence (BI) services. We empower you to make informed, data-driven decisions, optimize operations, and achieve your business goals.</p>
+                <a href="#" class="readmore stretched-link">More </a>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-12">
+              <div class="service-item  position-relative">
+                <h3>Cloud Service Infrastructure Management</h3>
+                <p>Navigating the complexities of the cloud can be overwhelming. Let us guide you with our expert Cloud Service Infrastructure Management services, enabling you to focus on your core business activities while we keep your cloud environment operating smoothly, securely, and cost-effectively.</p>
+                <a href="#" class="readmore stretched-link">More </a>
+              </div>
+            </div>
+
+            
+            <div class="col-lg-6 col-12">
+              <div class="service-item  position-relative">
+                <h3>IT Auditing and Testing</h3>
+                <p>In today's digital landscape, proactive IT security is more crucial than ever. Our comprehensive IT auditing and testing services empower you to identify vulnerabilities, ensure compliance, and optimize your technology investments. We will assist you in building a robust defense against cyber threats and allow you to unlock the full potential of your IT infrastructure.</p>
+                <a href="#" class="readmore stretched-link">More </a>
+              </div>
+            </div>
+
+
+            <div class="col-lg-6 col-12">
+              <div class="service-item  position-relative">
+                <h3>Training on Emerging Technology</h3>
+                <p>The digital landscape is evolving at breakneck speed, and businesses need to adapt to maintain a competitive edge. Digital technologies training equipes your employees with the necessary skills to leverage these innovative tools, unlocking new opportunities and driving growth.</p>
+                <a href="#" class="readmore stretched-link">More </a>
+              </div>
+            </div>
+
+          </div>
+
+      </div>
+    </div>
+
     <!-- ======= Clients Section ======= -->
     <section id="clients" class="clients">
       <div class="container" data-aos="zoom-out">
@@ -295,7 +365,7 @@
         <!-- <a href="#" class="glightbox play-btn"></a> -->
         <h3>Call To Action</h3>
         <p>Ready to elevate your digital presence and streamline your processes? Take the first step towards unlocking your business's full potential with our cutting-edge software solutions. Whether you're looking to enhance efficiency, boost productivity, or revolutionize your customer experience, our team of experts is here to help. Click below to schedule a personalized consultation and discover how our innovative technology can drive tangible results for your organization. Let's embark on this journey together and transform your vision into reality</p>
-        <a class="cta-btn" href="#">Call To Action</a>
+        <a class="cta-btn" href="contact.html">Call To Action</a>
       </div>
     </section><!-- End Call To Action Section -->
 
@@ -1020,6 +1090,7 @@
         container: document.getElementById('lottie-container'),
         renderer: 'svg',
         loop: true,
+        class: 'lottie-fluid',
         autoplay: true,
         path: 'assets/img/hero-anime.json'
       });
