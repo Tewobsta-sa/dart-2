@@ -154,14 +154,15 @@
     <div class="container position-relative">
       <div class="row gy-5" data-aos="fade-in">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
-          <h2 class="animated-text">Welcome to <span>Dart Digital <br> Technologies</span></h2>
+          <h2>Welcome to <span>Dart Digital Technologies</span></h2>
           <p>Darting Ahead with Digital Excellence: Empowering Tomorrow's Technology Today and Beyond, Partnering with You to Transform Vision into Innovation.</p>
           <div class="d-flex justify-content-center justify-content-lg-start">
             <a href="#about" class="btn-get-started">Book a demo</a>
             <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
           </div>
         </div>
-        <div class="col-lg-6 order-1 order-lg-2" id="lottie-container"></div>
+        <div class="col-lg-6 order-1 order-lg-2" id="lottie-container">
+        </div>
       </div>
     </div>
 
@@ -234,6 +235,9 @@
 
       </div>
     </section><!-- End About Us Section -->
+    <div id="featured-services">
+      
+    </div>
 
     <!-- ======= Clients Section ======= -->
     <section id="clients" class="clients">
@@ -931,6 +935,7 @@
         container: document.getElementById('lottie-container'),
         renderer: 'svg',
         loop: true,
+        class: 'lottie-fluid',
         autoplay: true,
         path: 'assets/img/hero-anime.json'
       });
