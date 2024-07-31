@@ -186,6 +186,7 @@
     <!-- ======= Portfolio Details Section ======= -->      
 
     <div class="portfolio-containers">
+      <div id="sliding-animation" style="height: 600px;"></div>
       <section class="portfolio-detail">
         <h2>Research and Innovation</h2>
         <p>We believe that impactful research should be accessible to all. We combine a dynamic team of experienced researchers, industry veterans, and cutting-edge software developers to create powerful tech-based research products specifically designed for commercial businesses.  </p>            
@@ -339,6 +340,20 @@
 
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
+
+<!-- Lottie file integration-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      lottie.loadAnimation({
+        container: document.getElementById('sliding-animation'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'assets/img/reasAnime.json'
+      });
+    });
+  </script>
 
 </body>
 
