@@ -186,6 +186,7 @@
     
 
     <div class="portfolio-containers">
+      <div id="sliding-animation" style="height: 600px;"></div>
       <section class="portfolio-detail">
         <h2>Hospital ERP detail</h2>
         <p style="text-align: justify;">
@@ -327,6 +328,20 @@
 
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
+
+<!-- Lottie file integration-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      lottie.loadAnimation({
+        container: document.getElementById('sliding-animation'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'assets/img/healthAnime.json'
+      });
+    });
+  </script>
 
 </body>
 
