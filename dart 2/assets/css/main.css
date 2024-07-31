@@ -414,6 +414,13 @@ section {
   .navbar a.active {
     color: #fff;
   }
+  .navbar .dropdown ul a.active {
+    color: red; 
+    background-color: transparent; 
+  }
+  .navbar .dropdown ul a:hover {
+    color: red; 
+  }
   .navbar a.active:before {
     visibility: visible;
     width: 100%;
