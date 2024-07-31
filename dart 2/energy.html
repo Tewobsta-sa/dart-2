@@ -187,6 +187,7 @@
 
 
     <div class="portfolio-containers">
+      <div id="sliding-animation" style="height: 600px;"></div>
       <section class="portfolio-detail">
         <h2>Gas Station Management System detail</h2>
         <p>We are passionate about empowering the energy sector through state-of-the-art software solutions and a team of dedicated industry experts. We understand the complex challenges faced by utilities, renewables, and energy service companies, and we are poised to assist you in navigating the evolving energy landscape.</p>
@@ -327,6 +328,20 @@
 
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
+
+<!-- Lottie file integration-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      lottie.loadAnimation({
+        container: document.getElementById('sliding-animation'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'assets/img/energyAnim.json'
+      });
+    });
+  </script>
 
 </body>
 
