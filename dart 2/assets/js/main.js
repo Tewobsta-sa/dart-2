@@ -38,31 +38,48 @@ document.addEventListener('DOMContentLoaded', () => {
    */
   let navbarlinks = document.querySelectorAll('#navbar a');
 
-function setActiveLink() {
-  let currentPage = window.location.pathname.split("/").pop();
-  navbarlinks.forEach(navbarlink => {
-    if (navbarlink.getAttribute('href') === currentPage) {
-      navbarlink.classList.add('active');
-    } else {
-      navbarlink.classList.remove('active');
+  function setActiveLink() {
+    let currentPage = window.location.pathname.split("/").pop();
+    let navbarlinks = document.querySelectorAll('#navbar a');
+    let dropdownParents = document.querySelectorAll('#navbar .dropdown > a');
+  
+    if (currentPage === "" || currentPage === "index.html") {
+      let homeLink = document.querySelector('#navbar a[href="index.html"]');
+      if (homeLink) {
+        homeLink.classList.add('active');
+      }
     }
-  });
-}
+  
+    navbarlinks.forEach(navbarlink => {
+      if (navbarlink.getAttribute('href') === currentPage) {
+        navbarlink.classList.add('active');
+        let dropdownParent = navbarlink.closest('.dropdown');
+        if (dropdownParent) {
+          dropdownParent.querySelector('a').classList.add('active');
+        }
+      }
+    });
+  }
+  
+  window.addEventListener('load', setActiveLink);
+  
+  document.querySelectorAll('#navbar a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      if (this.hash && document.querySelector(this.hash)) {
+        e.preventDefault();
+        let section = document.querySelector(this.hash);
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+  
+      document.querySelectorAll('#navbar a').forEach(l => l.classList.remove('active'));
 
-window.addEventListener('load', setActiveLink);
-
-navbarlinks.forEach(navbarlink => {
-  navbarlink.addEventListener('click', function(e) {
-    if (this.hash && document.querySelector(this.hash)) {
-      e.preventDefault();
-      let section = document.querySelector(this.hash);
-      section.scrollIntoView({ behavior: 'smooth' });
-    }
-    
-    navbarlinks.forEach(link => link.classList.remove('active'));
-    this.classList.add('active');
+      this.classList.add('active');
+      let dropdownParent = this.closest('.dropdown');
+      if (dropdownParent) {
+        dropdownParent.querySelector(':scope > a').classList.add('active');
+      }
+    });
   });
-});
   /**
    * Mobile nav toggle
    */
