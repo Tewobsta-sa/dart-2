@@ -347,7 +347,7 @@ section {
   }
 
   .navbar ul {
-    margin: 0;
+    margin: 0;  
     padding: 0;
     display: flex;
     list-style: none;
@@ -385,7 +385,7 @@ section {
     margin-left: 5px;
   }
 
-  .navbar>ul>li>a:before {
+  .navbar > ul > li > a:before {
     content: "";
     position: absolute;
     width: 100%;
@@ -397,29 +397,27 @@ section {
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
   }
-
-
+  
   .navbar a:hover:before,
-  .navbar li:hover>a:before,
   .navbar .active:before,
-  .navbar a.active:before {
+  .navbar .active-parent:before {
     visibility: visible;
     width: 100%;
   }
-
+  
   .navbar a:hover,
   .navbar .active,
   .navbar .active:focus,
-  .navbar li:hover>a,
-  .navbar a.active {
+  .navbar .active-parent {
     color: #fff;
   }
+  
   .navbar .dropdown ul a.active {
-    color: red; 
-    background-color: transparent; 
+    color: red;
   }
+  
   .navbar .dropdown ul a:hover {
-    color: red; 
+    color: red;
   }
   .navbar a.active:before {
     visibility: visible;

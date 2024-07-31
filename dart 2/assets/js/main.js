@@ -37,25 +37,20 @@ document.addEventListener('DOMContentLoaded', () => {
    * Navbar links active state on scroll
    */
   let navbarlinks = document.querySelectorAll('#navbar a');
-
   function setActiveLink() {
     let currentPage = window.location.pathname.split("/").pop();
     let navbarlinks = document.querySelectorAll('#navbar a');
-    let dropdownParents = document.querySelectorAll('#navbar .dropdown > a');
-  
-    if (currentPage === "" || currentPage === "index.html") {
-      let homeLink = document.querySelector('#navbar a[href="index.html"]');
-      if (homeLink) {
-        homeLink.classList.add('active');
-      }
-    }
   
     navbarlinks.forEach(navbarlink => {
+      navbarlink.classList.remove('active', 'active-parent');
       if (navbarlink.getAttribute('href') === currentPage) {
-        navbarlink.classList.add('active');
-        let dropdownParent = navbarlink.closest('.dropdown');
-        if (dropdownParent) {
-          dropdownParent.querySelector('a').classList.add('active');
+        if (currentPage === "" || currentPage === "index.html") {
+          document.querySelector('#navbar a[href="index.html"]').classList.add('active');
+        } else if (navbarlink.closest('.dropdown')) {
+          navbarlink.classList.add('active');
+          navbarlink.closest('.dropdown').querySelector(':scope > a').classList.add('active-parent');
+        } else {
+          navbarlink.classList.add('active');
         }
       }
     });
@@ -70,16 +65,19 @@ document.addEventListener('DOMContentLoaded', () => {
         let section = document.querySelector(this.hash);
         section.scrollIntoView({ behavior: 'smooth' });
       }
-  
-      document.querySelectorAll('#navbar a').forEach(l => l.classList.remove('active'));
-
-      this.classList.add('active');
-      let dropdownParent = this.closest('.dropdown');
-      if (dropdownParent) {
-        dropdownParent.querySelector(':scope > a').classList.add('active');
+      if (!this.parentElement.classList.contains('dropdown')) {
+        document.querySelectorAll('#navbar a').forEach(l => l.classList.remove('active', 'active-parent'));
+        this.classList.add('active');
+      } else if (this.closest('ul').previousElementSibling) {
+        
+        document.querySelectorAll('#navbar a').forEach(l => l.classList.remove('active', 'active-parent'));
+        this.classList.add('active');
+        this.closest('.dropdown').querySelector(':scope > a').classList.add('active-parent');
       }
+    
     });
   });
+ 
   /**
    * Mobile nav toggle
    */
