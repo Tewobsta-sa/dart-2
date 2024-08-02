@@ -345,11 +345,11 @@
     }
 
     .faq-section {
-  margin-bottom: 60px;  /* Adjust this value as needed */
+  margin-bottom: 60px;  
    }
 
    .faq__item:last-child {
-  margin-bottom: 40px;  /* Adjust this value as needed */
+  margin-bottom: 40px;  
 }
   </style>
   <script>
@@ -358,7 +358,7 @@
       
       faqItems.forEach(item => {
         item.addEventListener('click', function() {
-          // Close all other items
+        
           faqItems.forEach(otherItem => {
             if (otherItem !== this) {
               otherItem.classList.remove('active');
@@ -366,7 +366,7 @@
             }
           });
     
-          // Toggle current item
+         
           this.classList.toggle('active');
           const content = this.nextElementSibling;
           if (content.style.display === 'block') {
@@ -377,7 +377,7 @@
         });
       });
     
-      // Open the first item by default
+      
       if (faqItems.length > 0) {
         faqItems[0].classList.add('active');
         faqItems[0].nextElementSibling.style.display = 'block';
