@@ -3011,6 +3011,7 @@ ADDED FROM LINE 1149 TO 1237
   padding: 10px;
 }
 
+/* projects section */
 .projects h3{
   padding-bottom: 20px;
   text-align: center;
@@ -3023,12 +3024,15 @@ ADDED FROM LINE 1149 TO 1237
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+
 }
 
-.project-card{
-  border: 2px solid #9ECEC8;
-  border-radius: 10px;
-  padding: 10px;
+.project-card {
+  background-color: #f9f9f9; 
+  border: 2px solid #ddd; 
+  border-radius: 8px; 
+  padding: 10px; 
+  width: 100%;
   text-align: left;
 }
 
@@ -3055,23 +3059,13 @@ ADDED FROM LINE 1149 TO 1237
   }
 }
 
-
-/* .project-info h3:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: var(--color-primary);
-  left: 0;
-  bottom: 0;
-} */
-
 .project-card ul {
-  list-style: none;
-  padding: 0;
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
   font-size: 15px;
 }
+
 
 .project-card li {
   display: flex;
@@ -3082,6 +3076,7 @@ ADDED FROM LINE 1149 TO 1237
 .project-card li:last-child{
   padding-bottom: 5px;
 }
+
 
 
 .project-card ul strong {
@@ -3097,11 +3092,14 @@ ADDED FROM LINE 1149 TO 1237
   background: var(--color-primary);
   color: #fff;
   border-radius: 50px;
-  transition: 0.3s;
+  transition: 0.5s;
+  border: 2px solid var(--color-primary);
 }
 
+
 .project-card .btn-visit:hover {
-  background: #009d8b;
+  background: transparent;
+  color: var(--color-primary);
 }
 
 
