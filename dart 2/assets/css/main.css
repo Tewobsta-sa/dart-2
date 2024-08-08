@@ -2798,26 +2798,7 @@ ADDED FROM LINE 1149 TO 1237
 
 
 
-/*
-.project-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  grid-gap: 20px; 
-  max-width:960PX ;
-}
 
-
-.project-info .btn-visit {
-  padding: 8px 40px;
-  background: var(--color-primary);
-  color: #fff;
-  border-radius: 50px;
-  transition: 0.3s;
-}
-
-.project-info .btn-visit:hover {
-  background: #009d8b;
-}
 
 
 
@@ -2986,7 +2967,7 @@ ADDED FROM LINE 1149 TO 1237
 
 .portfolio-detail{
   text-align: justify;
-  margin-bottom: 0px;
+  margin-bottom: 10px;
   padding-bottom: 0px;
   padding-top: 10px;
 }
@@ -3002,6 +2983,13 @@ ADDED FROM LINE 1149 TO 1237
 }
 
 /* projects section */
+
+.horizontal-line{
+  border: none; 
+  height: 2px; 
+  background-color: var(--color-primary); 
+  margin: 20px 0;
+}
 
 .projects h3{
   padding-bottom: 20px;
