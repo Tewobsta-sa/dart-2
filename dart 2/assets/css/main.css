@@ -2978,14 +2978,6 @@ ADDED FROM LINE 1149 TO 1237
   padding: 0;
 }
 
-
-
-
-
-
-
-
-
 .portfolio-containers{
   max-width: 1200px;
   margin: 0 auto;
@@ -2999,8 +2991,6 @@ ADDED FROM LINE 1149 TO 1237
   padding-top: 10px;
 }
 
-
-
 .portfolio-detail h2{
   text-align: center;
   font-weight: 600;
@@ -3012,12 +3002,14 @@ ADDED FROM LINE 1149 TO 1237
 }
 
 /* projects section */
+
 .projects h3{
   padding-bottom: 20px;
   text-align: center;
   font-weight: 600;
   margin-top: 0;
   padding-top: 0;
+  text-transform: uppercase;
 }
 
 .project-detail{
@@ -3034,6 +3026,11 @@ ADDED FROM LINE 1149 TO 1237
   padding: 10px; 
   width: 100%;
   text-align: left;
+  position: relative;
+}
+
+.project-content{
+  margin-bottom: 60px;
 }
 
 .project-card:hover{
@@ -3088,6 +3085,8 @@ ADDED FROM LINE 1149 TO 1237
 
 
 .project-card .btn-visit {
+  position: absolute;
+  bottom: 10px;
   padding: 8px 30px;
   background: var(--color-primary);
   color: #fff;
