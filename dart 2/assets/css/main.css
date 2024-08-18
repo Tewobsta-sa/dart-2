@@ -2982,112 +2982,142 @@ ADDED FROM LINE 1149 TO 1237
   padding: 10px;
 }
 
-/* projects section */
+/*--------------------------------------------------------------
+# projects Section
+--------------------------------------------------------------*/
+.horizontal-line {   
+  border: none;   
+  height: 2px;   
+  background-color: var(--color-primary);   
+  margin: 20px 0; 
+}  
 
-.horizontal-line{
-  border: none; 
-  height: 2px; 
-  background-color: var(--color-primary); 
-  margin: 20px 0;
+.projects h3 {   
+  padding-bottom: 20px;   
+  text-align: center;   
+  font-weight: 600;   
+  margin-top: 0;   
+  padding-top: 0;   
+  text-transform: uppercase; 
+}  
+
+.project-detail {   
+  display: grid;   
+  grid-template-columns: repeat(4, 1fr);   
+  gap: 20px; 
+}  
+
+.project-card {   
+  background-color: #f9f9f9;   
+  border: 2px solid #ddd;   
+  border-radius: 8px;   
+  padding: 10px;   
+  width: 100%;   
+  text-align: left;   
+  position: relative; 
+}  
+
+.project-content {   
+  margin-bottom: 60px; 
+}  
+
+.project-card:hover {   
+  border-color: var(--color-primary); 
+}  
+
+/* Responsive styles */
+@media (max-width: 1024px) {   
+  .project-detail {     
+      grid-template-columns: repeat(3, 1fr);   
+  }  
+}  
+
+@media (max-width: 768px) {   
+  .project-detail {     
+      grid-template-columns: repeat(2, 1fr);   
+  }  
+}  
+
+@media (max-width: 480px) {   
+  .project-detail {     
+      grid-template-columns: 1fr;   
+  }  
+}  
+
+/* Button styling */
+.project-card .btn-visit {   
+  position: absolute;   
+  bottom: 10px;   
+  padding: 8px 30px;   
+  background: var(--color-primary);   
+  color: #fff;   
+  border-radius: 50px;   
+  transition: 0.5s;   
+  border: 2px solid var(--color-primary); 
+}  
+
+.project-card .btn-visit:hover {   
+  background: transparent;   
+  color: var(--color-primary); 
+}  
+
+.project-card ul {   
+  list-style-type: none;   
+  padding: 0;   
+  margin: 0;   
+  font-size: 15px; 
+}  
+
+.project-card li {   
+  display: flex;   
+  flex-direction: column;   
+  padding-bottom: 7px;   
+  font-size: 16px; 
+}  
+
+.project-card li:last-child {   
+  padding-bottom: 5px; 
+}  
+
+.project-card ul strong {   
+  text-transform: uppercase;   
+  font-weight: 400;   
+  color: #9c9c9c;   
+  font-size: 12px; 
 }
-
-.projects h3{
-  padding-bottom: 20px;
-  text-align: center;
-  font-weight: 600;
-  margin-top: 0;
-  padding-top: 0;
-  text-transform: uppercase;
-}
-
-.project-detail{
+.project-detail {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-
 }
 
 .project-card {
-  background-color: #f9f9f9; 
-  border: 2px solid #ddd; 
-  border-radius: 8px; 
-  padding: 10px; 
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
   width: 100%;
   text-align: left;
   position: relative;
 }
 
-.project-content{
-  margin-bottom: 60px;
+/* centers the project-card when there are fewer items */
+.project-card:nth-child(1) {
+  grid-column: 2 / span 1; /* First item in the second column */
 }
 
-.project-card:hover{
-  border-color: var(--color-primary);
+.project-card:nth-child(2) {
+  grid-column: 3 / span 1; /* Second item in the third column */
 }
 
-/* Responsive styles */
-@media (max-width: 1024px) {
-  .project-detail {
-    grid-template-columns: repeat(3, 1fr);
-  }
+.project-card:nth-child(3) {
+  grid-column: 1 / span 1; /* Third item in the first column */
 }
 
-@media (max-width: 768px) {
-  .project-detail {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.project-card:nth-child(4) {
+  grid-column: 4 / span 1; /* Fourth item in the fourth column */
 }
 
-@media (max-width: 480px) {
-  .project-detail {
-    grid-template-columns: 1fr;
-  }
-}
-
-.project-card ul {
-  list-style-type: none; 
-  padding: 0; 
-  margin: 0; 
-  font-size: 15px;
-}
-
-
-.project-card li {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 7px;
-  font-size: 16px;
-}
-.project-card li:last-child{
-  padding-bottom: 5px;
-}
-
-
-
-.project-card ul strong {
-  text-transform: uppercase;
-  font-weight: 400;
-  color: #9c9c9c;
-  font-size: 12px;
-}
-
-
-.project-card .btn-visit {
-  position: absolute;
-  bottom: 10px;
-  padding: 8px 30px;
-  background: var(--color-primary);
-  color: #fff;
-  border-radius: 50px;
-  transition: 0.5s;
-  border: 2px solid var(--color-primary);
-}
-
-
-.project-card .btn-visit:hover {
-  background: transparent;
-  color: var(--color-primary);
-}
 
 
 

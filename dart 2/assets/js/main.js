@@ -333,3 +333,31 @@ window.onclick = function(e){
     e.target.style.display = "none"
   }
 }
+
+/*--------------------------------------------------------------
+# projects Section
+--------------------------------------------------------------*/
+document.addEventListener('DOMContentLoaded', function() {
+  const container = document.querySelector('.project-detail');
+  const cards = Array.from(container.querySelectorAll('.project-card'));
+
+  function positionCards() {
+      const columnOrder = [2, 3, 1, 4];
+      cards.forEach((card, index) => {
+          const column = columnOrder[index % 4]; 
+          const row = Math.floor(index / 4) + 1;
+          card.style.gridColumn = column;  
+          card.style.gridRow = row;        
+      });
+
+      if (cards.length === 1) {
+          cards[0].style.gridColumn = '2 / span 1'; 
+      } else if (cards.length === 2) {
+          cards[0].style.gridColumn = '2 / span 1'; 
+          cards[1].style.gridColumn = '3 / span 1'; 
+      }
+  }
+
+  positionCards();
+  window.addEventListener('resize', positionCards);
+});
