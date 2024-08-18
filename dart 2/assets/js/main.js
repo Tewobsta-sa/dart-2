@@ -40,20 +40,22 @@ document.addEventListener('DOMContentLoaded', () => {
   function setActiveLink() {
     let currentPage = window.location.pathname.split("/").pop();
     let navbarlinks = document.querySelectorAll('#navbar a');
-  
-    navbarlinks.forEach(navbarlink => {
-      navbarlink.classList.remove('active', 'active-parent');
-      if (navbarlink.getAttribute('href') === currentPage) {
-        if (currentPage === "" || currentPage === "index.html") {
-          document.querySelector('#navbar a[href="index.html"]').classList.add('active');
-        } else if (navbarlink.closest('.dropdown')) {
-          navbarlink.classList.add('active');
-          navbarlink.closest('.dropdown').querySelector(':scope > a').classList.add('active-parent');
-        } else {
-          navbarlink.classList.add('active');
+    
+    if (currentPage === "" || currentPage === "index.html") {
+      document.querySelector('#navbar a[href="index.html"]').classList.add('active');
+    } else {
+      navbarlinks.forEach(navbarlink => {
+        navbarlink.classList.remove('active', 'active-parent');
+        if (navbarlink.getAttribute('href') === currentPage) {
+          if (navbarlink.closest('.dropdown')) {
+            navbarlink.classList.add('active');
+            navbarlink.closest('.dropdown').querySelector(':scope > a').classList.add('active-parent');
+          } else {
+            navbarlink.classList.add('active');
+          }
         }
-      }
-    });
+      });
+    }
   }
   
   window.addEventListener('load', setActiveLink);
@@ -65,16 +67,15 @@ document.addEventListener('DOMContentLoaded', () => {
         let section = document.querySelector(this.hash);
         section.scrollIntoView({ behavior: 'smooth' });
       }
+  
       if (!this.parentElement.classList.contains('dropdown')) {
         document.querySelectorAll('#navbar a').forEach(l => l.classList.remove('active', 'active-parent'));
         this.classList.add('active');
       } else if (this.closest('ul').previousElementSibling) {
-        
         document.querySelectorAll('#navbar a').forEach(l => l.classList.remove('active', 'active-parent'));
         this.classList.add('active');
         this.closest('.dropdown').querySelector(':scope > a').classList.add('active-parent');
       }
-    
     });
   });
  
