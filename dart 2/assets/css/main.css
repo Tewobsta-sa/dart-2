@@ -3085,7 +3085,25 @@ ADDED FROM LINE 1149 TO 1237
   color: #9c9c9c;   
   font-size: 12px; 
 }
+<<<<<<< Updated upstream
 .project-detail {
+=======
+
+.projects{
+  margin-top: 0px;
+}
+
+.projects h3{
+  padding-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 0;
+  padding-top: 0;
+  text-transform: uppercase;
+}
+
+.project-detail{
+>>>>>>> Stashed changes
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
