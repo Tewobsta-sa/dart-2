@@ -265,97 +265,7 @@
       </div>
     </div>
   </section>
-  <style>
-    .faq {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
   
-    .section-title {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .section-title h2 {
-  font-size: 32px;
-  font-weight: 600;
-   }
-  
-    .faq__item {
-      margin-bottom: 20px;
-      border: 1px solid #e0e0e0;
-      border-radius: 8px;
-      overflow: hidden;
-    }
-  
-    .faq__item__title {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      padding: 15px 20px;
-      background: #f8f8f8;
-      border: none;
-      text-align: left;
-      cursor: pointer;
-      font-weight: bold;
-      transition: background-color 0.3s ease;
-    }
-  
-    .faq__item__title:hover {
-      background-color: #f0f0f0;
-    }
-  
-    .faq__item__icon {
-      position: relative;
-      width: 20px;
-      height: 20px;
-    }
-  
-    .faq__item__icon-bar {
-      position: absolute;
-      background-color: #333;
-      transition: transform 0.3s ease;
-    }
-  
-    .faq__item__icon-bar:first-child {
-      top: 50%;
-      left: 0;
-      right: 0;
-      height: 2px;
-      transform: translateY(-50%);
-    }
-  
-    .faq__item__icon-bar:last-child {
-      top: 0;
-      bottom: 0;
-      left: 50%;
-      width: 2px;
-      transform: translateX(-50%);
-    }
-  
-    .faq__item__title.active .faq__item__icon-bar:last-child {
-      transform: translateX(-50%) scaleY(0);
-    }
-  
-    .faq__item__content {
-      display: none;
-      padding: 15px 20px;
-      background-color: #ffffff;
-    }
-  
-    .faq__item__title.active + .faq__item__content {
-      display: block;
-    }
-
-    .faq-section {
-  margin-bottom: 60px;  
-   }
-
-   .faq__item:last-child {
-  margin-bottom: 40px;  
-}
-  </style>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       const faqItems = document.querySelectorAll('.faq__item__title');
@@ -469,19 +379,5 @@
 
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/66aff08932dca6db2cb9f126/1i4fk78gq';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
-  </script>
-  <!--End of Tawk.to Script-->
-
 </body>
   </html>
