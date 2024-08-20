@@ -1703,6 +1703,7 @@ ADDED FROM LINE 1149 TO 1237
 
 /*--------------------------------------------------------------
 # Frequently Asked Questions Section
+--------------------------------------------------------------*/
 
 .faq .content h3 {
   font-weight: 400;
@@ -1774,10 +1775,10 @@ ADDED FROM LINE 1149 TO 1237
   background: #fff;
   box-shadow: none;
 }
-  --------------------------------------------------------------*/
+ 
 
   /*--------------------------------------------------------------
-   # Frequently Asked Questions Section
+   # Frequently Asked Questions for FAQ page
   ------------------------------------------------------------*/
 
   .faq {
